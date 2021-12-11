@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Alen Thomas</title>
+    <script src="info.js"></script>
+    <link rel='stylesheet' href='normalize.css' type='text/css' media='screen'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="body">
+    <div id="heading">
+        <img src="https://freepngimg.com/thumb/paper_sheet/7-2-paper-sheet-picture.png" alt="">
+        <h1 id="head">FORM BUILDER</h1 >
+    </div>
+    <div id="container">
+        <input type="button" id="cont_id1" onclick="window.location.href='info.html';" value=" HOME " />
+        <input type="button" id="cont_id2" onclick="window.location.href='#';" value="  STORE  " />
+        <input type="button" id="cont_id3" onclick="window.location.href='#';" value="  ABOUT  " />
+        <input type="button" id="cont_id4" onclick="window.location.href='honesty.html';" value=" HONESTY "  />
+        <input type="button" id="cont_id5" onclick="window.location.href='reflection.html';" value="REFLECTION" /> 
+    </div>
+    <div id="main">
+    <form 
+        action="https://httpbin.org/post" 
+        method="post" 
+        name="signup"
+        onsubmit="return checkForm();"
+    >
+        <div class="column a">
+        <p>Sign Up Today</p>
+        <p>using the Best </p>
+        <p>Form Builder on </p>
+        <p>market!</p>
+
+        </div>
+        <div class="column b">
+            <label >First Name:</label><br>
+        <input id="fname" type="text" name="user_id" placeholder="e.g, John" required>
+        <br>
+        <label >Last Name:</label><br>
+        <input id="lname" type="text" name="user_id" placeholder="e.g, Smith" required>
+        <br>
+        <label >Password:</label><br>
+        <input id="password1" type="password" name="password1" autocomplete="off" placeholder="e.g, App1e5" required>
+        <br>
+        <label >Re-enter Password:</label><br>
+        <input id="password2" type="password" name="password2" autocomplete="off" placeholder="e.g, App1e5" required>
+        <br>
+        <label >User Name:</label><br>
+        <input id="uname" type="text" name="user_id" placeholder="e.g, johnny" required>
+        <br>
+        <label >E-mail:</label><br>
+        <input id="Email" type="email" name="Email" placeholder="e.g, john117@..." required>
+        <br>
+        
+
+        <p>Graduation Status:</p>
+            <label><input type="radio" name="gradstatus" value="yes" />Graduated</label><br />
+            <label><input type="radio" name="gradstatus" value="notyet" />Current Enrolled</label><br />      
+            <label><input type="radio" name="gradstatus" value="no" />Did not graduate</label><br />
+            <br>
+            
+        <label >Age:</label><br>
+        <input id="age" type="number" name="number" placeholder="18-60" required min="18" max="60">
+        <br>
+        <input type="hidden" name="lastName" id="lastName" value="Thomas" />
+        <input type="hidden" name="studentId" id="studentId" value="156632200" />
+        </div>
+        <div class="column c">
+            <div id="errors">
+                <div id = "errorsFname"></div>
+                <div id = "errorsLname"></div>
+                <div id = "errorsPassword"></div>
+                <div id = "errorsUname"></div>
+                <div id = "errorsEdu"></div>
+            </div>
+            <input type="submit" id="button1" value="    Submit" onclick="clearShowErrors();"/>
+            <input type="reset" id="button2" value="Reset" onclick="clearShowErrors();"/>  
+        
+        </div>
+    </form>
+    </div>
+    <footer id="foot">
+        <p>Developed using HTML and CSS<p>
+        <p>by Alen Thomas on 12/10/21</p>
+        <p>
+            <a href="https://github.com/Alen117/College.git">Visit my Github page!</a>
+        </p>
+    </footer>
+</body>
+</html>
